@@ -1,36 +1,36 @@
-import { PostService } from './services/post.service';
-
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
-import { FormsComponent } from './forms/forms.component';
-import { LikesComponent } from './likes/likes.component';
-import { HttpClientModule } from '@angular/common/http';
-import { SignUpComponent } from './forms/sign-up/sign-up.component';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { NewCourseFormComponent } from './forms/new-course-form/new-course-form.component';
-import { PostsComponent } from './posts/posts.component';
+import { ChildComponent } from './child/child/child.component';
+import { HeaderComponent } from './header/header/header.component';
+import { RecipesComponent } from './receipes/recipes/recipes.component';
+import { RecipeListComponent } from './receipes/recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './receipes/recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './receipes/recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
-    FormsComponent,
-    LikesComponent,
-    SignUpComponent,
-    NewCourseFormComponent,
-    PostsComponent
-  ],
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    FormsModule
   ],
-  providers: [PostService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,29 +1,15 @@
-<h1>Input & Output</h1>
+<!-- Child Component - String Interpolation - Property Binding - Event Binding(click , input) - Two way Binding-->
+<!-- <app-child></app-child> -->
 
-<app-child (childEvent) ="message = $event" [parentData]="name"></app-child> 
+<!-- I/O  -->
+<!-- <app-child></app-child> -->
 
-<div>{{message}}</div>
-
-<hr>
-<h1>Forms</h1>
-
-<app-forms></app-forms>
-
-<!-- <hr>
-<h1>Likes</h1>
-
-<app-likes></app-likes>
-
-<div>{{}}</div> -->
-
-<hr>
-<h2>SignUp Form</h2>
-<app-sign-up></app-sign-up>
-
-<hr>
-<h2>new course form</h2>
-<app-new-course-form></app-new-course-form>
-
-<hr>
-<h1>Posts</h1>
-<app-posts></app-posts>
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-recipes></app-recipes>
+            <app-shopping-list></app-shopping-list>
+        </div>
+    </div>
+</div>
